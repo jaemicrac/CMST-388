@@ -12,10 +12,10 @@ jobs:
   build-and-deploy:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v1
-        with:
-          app-name: 'CMST388-UMGC-jcracolici'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.APPSERVICECMST388 }}
+        - uses: actions/checkout@main
+        - name: Deploy to Azure Web App
+          uses: azure/webapps-deploy@v1
+          with:
+            app-name: 'CMST388-UMGC-jcracolici'
+            slot-name: 'production'
+            publish-profile: ${{ secrets.APPSERVICECMST388 }}
