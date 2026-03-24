@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector("#add-classes").addEventListener('click', () => {
         document.querySelector('.selector-examples li:first-child').classList.add('first');
+        document.querySelectorAll('.selector-examples li:nth-child(even)').forEach(el => el.classList.add('even'));
         document.querySelectorAll('.selector-examples li:nth-child(odd)').forEach(el => el.classList.add('odd'));
         document.querySelector('.selector-examples li:nth-child(4)').classList.add('highlighter');
         document.querySelector('.selector-examples li:nth-child(5)').classList.add('highlighter');
