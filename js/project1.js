@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     */
 
     // TODO: Declare variables for name, age, and isStudent setting values with your own name, age, and student status.
+    const name = "Jae Mi";
+    const age = 37;
+    const isStudent = true;
     
     const introduction = (name, age, isStudent) => {
 
