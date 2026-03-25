@@ -59,8 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector("#change-language").addEventListener('click', () => {
         // TODO: Add code to change the text of the currentLanguage class to the value of the newLanguage ID:
         // - 1: Create a new variable called inputValue and set it to the value of the #newLanguage id
+        const inputValue = document.querySelector('#newLanguage').value;
         // - 2: Create a new variable called element and set it to the .currentLanguage class
+        const element = document.querySelector('.currentLanguage');
         // - 3: Using .innerHTML (https://www.w3schools.com/jsref/prop_html_innerhtml.asp), update element with inputValue
+        element.innerHTML = inputValue;
     });
 
     /* PART 4: TOGGLES
