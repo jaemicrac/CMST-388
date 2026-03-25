@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const name = "Jae Mi"; 
     const age = 37; 
     const isStudent = true; 
-           // TODO: Check if isStudent is true or false and set text output to a new variable called studentStatus
+    
+        // TODO: Check if isStudent is true or false and set text output to a new variable called studentStatus
         // - If isStudent is true, set studentStatus to "I am currently a student."
         // - If isStudent is false, set studentStatus to "I am not a student."
     
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         messageElement.textContent = message;
         messageDisplayArea.appendChild(messageElement);
     };
-    introduction(name, age, isStudent);
+
         
         // TODO: Using string concatenation, store a message to a new variable called message. 
         // - The message variable should should include your name, age, and a statement about whether you are a student or not. 
